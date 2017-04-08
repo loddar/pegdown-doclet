@@ -1,5 +1,5 @@
-Pegdown Doclet
-==============
+Markdown Doclet
+===============
 
 A Doclet that allows the use of Markdown and [PlantUML](http://plantuml.sourceforge.net/) in JavaDoc comments. It uses [Pegdown](http://www.pegdown.org/) as Markdown processor. It's a simple preprocessor to the standard Doclet: It processes all JavaDoc comments in the documentation tree and then forwards the result to the standard Doclet. The JavaDoc output by this Doclet for this Doclet can be found [here](http://projects.raffael.ch/pegdown-doclet).
 
@@ -165,7 +165,7 @@ buildscript {
         mavenCentral() // or jcenter()
     }
     dependencies {
-        classpath 'ch.raffael.pegdown-doclet:pegdown-doclet:1.2'
+        classpath 'ch.raffael.pegdown-doclet:pegdown-doclet:1.3'
     }
 }
 
@@ -187,7 +187,7 @@ Add the following to your POM to use the doclet with Maven:
         <docletArtifact>
           <groupId>ch.raffael.pegdown-doclet</groupId>
           <artifactId>pegdown-doclet</artifactId>
-          <version>1.1</version>
+          <version>1.3</version>
         </docletArtifact>
         <useStandardDocletOptions>true</useStandardDocletOptions>
       </configuration>
